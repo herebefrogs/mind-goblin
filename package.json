@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Your friendly internet enabled assistant. Swap minds with custom prompts and Ollama",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +17,6 @@
   "author": "RangerMauve",
   "license": "AGPL-3.0",
   "dependencies": {
-    "@huggingface/hub": "^0.14.2",
-    "ollama": "^0.5.0"
+    "striptags": "^3.2.0"
   }
 }
