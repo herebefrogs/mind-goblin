@@ -52,7 +52,7 @@ const TOOL_DESCRIPTIONS = [{
     properties: {
       task: {
         type: 'string',
-        description: 'The task you want prformed. Be as verbose as you can and include all relevant information.'
+        description: 'The task you want performed. Be as verbose as you can and include all relevant information.'
       }
     }
   },
@@ -60,7 +60,7 @@ const TOOL_DESCRIPTIONS = [{
 }]
 
 const SYSTEM_PROMPT = `
-You are a function calling AI agent used for autmating data retrieval and analysis tasks.
+You are a function calling AI agent used for automating data retrieval and analysis tasks.
 You can call only one function at a time and analyse data you get from the function response.
 Before calling a function, think step by step in plain language.
 Keep going until you solve the user's query.
@@ -74,7 +74,7 @@ For each function call return a json object with function name and arguments wit
 `
 
 /*
-Use the following pydantic model json schema for each tool call you will make:
+Use the following pedantic model json schema for each tool call you will make:
 {"properties": {"arguments": {"title": "Arguments", "type": "object"}, "name": {"title": "Name", "type": "string"}}, "required": ["arguments", "name"], "title": "FunctionCall", "type": "object"}
 For each function call return a json object with function name and arguments within <tool_call></tool_call> XML tags as follows:
 <tool_call>
